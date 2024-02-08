@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario1</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body onload="init()">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="logo.jpg" alt="Logo" style="height: 60px; margin-left: 10px; margin-top: 2px;">
+                <span class="tarea-text">Tarea #3</span>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li onclick="setAsActive(this)"><a href="formulario1.html">Formulario 1</a></li>
+                <li onclick="setAsActive(this)"><a href="formulario2.html">Formulario 2</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <div class="box">
+                <div class="row">
+                    <span class="box-text">Nombre: Samantha Rodas</span>
+                </div>
+                <div class="row">
+                    <span class="box-text">Carnet: 20004798</span>
+                </div>
+                <div class="row">
+                    <span class="box-text">Curso: Fundamentos</span>
+                </div>
+                <div class="row">
+                    <span class="box-text">Año: 2024</span>
+                </div>
+            </div>
+        </main>
+
+        <main>
+            <div class="box">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Nombre" id="first_name" type="text" class="validate">
+                            <label for="first_name">Nombre</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input placeholder="Apellido" id="last_name" type="text" class="validate">
+                            <label for="last_name">Apellido</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input placeholder="Direccion" id="addr" type="text" class="validate">
+                            <label for="addr">Direccion</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input placeholder="Cumpleaños" id="bdate" type="date" class="validate">
+                            <label for="bdate">Cumpleaños</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input placeholder="Carnet" id="carnet" type="text" class="validate">
+                            <label for="carnet">Carnet</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input placeholder="Mascotas" id="mascotas" type="text" class="validate">
+                            <label for="mascotas">Mascotas</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <select class="browser-default">
+                            <option value="" disabled selected>Direccion</option>
+                            <option value="1">Direccion 1</option>
+                            <option value="2">Direccion 2</option>
+                            <option value="3">Direccion 3</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <a class="waves-effect waves-light btn">Grabar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
